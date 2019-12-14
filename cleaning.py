@@ -15,7 +15,7 @@ def clean (reader):
 
 # NETTOIE TOUTE L'ANNEE 1884 ET RECREER UNE BASE DE DONNEES
 # Fichier source : 1884
-# Fichier destination : fichiers_clean
+# Fichier destination : cleaned_files
 
 # initialisation de la date
 jour = '26'
@@ -28,7 +28,7 @@ while((int(mois)<13) and (int(jour)<32)):
 	# fichier source
 	file = annee+'/'+date+'/'+date+'.metadata.fulltext.json'
 	# fichier nettoye
-	copie = 'fichiers_clean/'+date+'.txt'
+	copie = 'cleaned_files/'+date+'.txt'
 	f  = open(file,"r")
 	c = open(copie, "a")
 	reader = f.readline()
