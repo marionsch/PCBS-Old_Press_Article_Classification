@@ -12,15 +12,41 @@ from sklearn import metrics
 
 # ----------DECOUPE--ARTICLE-----------------------------------
 
-# nettoie un titre donne
 def nettoie_titre(titre):
+    """Fonction qui nettoie un titre
+    
+    Tous les caracteres autres qu'une majuscule, 
+    un point ou un espace sont supprimes
+    
+    Args:
+        titre : un titre d'article
+        
+    Returns:
+        le titre nettoye
+        
+    """
     for i in titre:
         if (not(i.isupper()) and not(i=='.') and not(i==' ')):
             titre=titre.replace(i, '')
     return titre
 
-# retourne une liste d'articles
+
 def titres(corpus):
+    """Fonction qui retourne une liste d articles
+    
+    Cette fonction enregistre toutes les positions des titres d'articles, 
+    on connait donc la position de tous les articles.
+    
+    Args:
+        corpus : le texte complet corrigé mais non decoupe
+        
+    Returns:
+        une liste de liste, cette derniere comprend le titre nettoye, 
+        sa position de début et sa position de fin.
+        On peut donc connaitre la position de chaque article 
+        (de la fin du titre au debut du titre suivant)
+        
+    """
 
     # initialisation de la position du curseur
     i = 0
@@ -56,8 +82,19 @@ def titres(corpus):
         else: i=i+1
     return articles
 
-# renvoie une liste de mot
 def mot(article): 
+    """Fonction qui decoupe un texte en liste de mots
+    
+    Une longue chaine de caracteres est decoupee en liste de mots.
+    Le critere de separation est un espace entre chaque suite de chaine de caracteres.
+    
+    Args:
+        article : un texte non decoupe
+        
+    Returns:
+        une liste de mots
+        
+    """
     m = article.split(' ')
     return m
 
