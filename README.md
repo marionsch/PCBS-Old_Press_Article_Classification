@@ -15,3 +15,7 @@ To implement this project, python3 will be used. To execute the code, nltk, gens
 As "Le Matin" is a daily newspaper, one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, unzip the folder to use it.
 
 In these files, there are lot of mistakes due to the digitization. So unwanted characters can be removed with the program "cleaning.py". If the user wants to directly use cleaned files, they are available in the folder "cleaned_files". 
+
+The program analyzing the newspaper is "w2v.py". The data to analyze are chosen inside the file and the results are the articles classified in different clusters according to their subjects.
+
+Finally, the program "model.py" creates new files with several days to improve the classification's results.
