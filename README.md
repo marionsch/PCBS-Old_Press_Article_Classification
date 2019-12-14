@@ -12,4 +12,6 @@ To implement this project, python3 will be used. To execute the code, nltk, gens
 ### pip -U install gensim
 ### pip -U install scikit-learn
 
-As "Le Matin" is a daily newspaper, one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, unzip the file to use it.
+As "Le Matin" is a daily newspaper, one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, unzip the folder to use it.
+
+In these files, there are lot of mistakes due to the digitization. So unwanted characters can be removed with the program "cleaning.py". If the user wants to directly use cleaned files, they are available in the folder "cleaned_files". 
