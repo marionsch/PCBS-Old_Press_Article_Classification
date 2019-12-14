@@ -3,9 +3,19 @@
 # sch-marion@hotmail.com
 # Décembre 2019
 
-# Nettoie un texte 
-# Enleve les caracteres autres que chiffres, lettres minuscules, lettres majuscules, lettres accentuees et ponctuation classique
 def clean (reader):
+    """ Fonction qui nettoie un texte
+    
+    Cette fonction enleve les caracteres autres que chiffres, lettres minuscules, 
+    lettres majuscules, lettres accentuees et ponctuation classique.
+    
+    Args: 
+        reader : le texte a modifier
+        
+    Returns:
+        le texte nettoye c est a dire sans les caracteres indesirables
+    
+    """
     text = ''
     for car in reader:
         if ((ord(car) >= 46 and ord(car) <= 122) or (ord(car) == 32) or (ord(car) == 44) or (ord(car) == 39) or (ord(car) == 233) or (ord(car) == 232) or (ord(car) == 224) or (ord(car) == 249) or (ord(car) == 238) or (ord(car) == 234)):
@@ -13,9 +23,9 @@ def clean (reader):
     return text
 
 
-# NETTOIE TOUTE L'ANNEE 1884 ET RECREER UNE BASE DE DONNEES
-# Fichier source : 1884
-# Fichier destination : cleaned_files
+""" NETTOIE TOUTE L'ANNEE 1884 ET RECREER UNE BASE DE DONNEES
+ Fichier source : 1884
+ Fichier destination : cleaned_files"""
 
 # initialisation de la date
 jour = '26'
