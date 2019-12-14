@@ -7,7 +7,9 @@ At the moment, it is easy to make a research with a date but there is no tool fo
 
 In this project, a part of the database will be used to try to classify articles according to their subjects. In a frist part, articles will be clean in order to correct mistakes added during the digitization. In a second part, the database will be analyse to know how much and which subjects we will be looking for. In a last part, word2vect will be used to classify articles according to the subjects found. 
 
-To implement this project, python3 will be used. If you want to execute the code, you need to install nltk, gensim and sklear with the following command in a terminal :
+To implement this project, python3 will be used. To execute the code, nltk, gensim and sklear need to be installed with the following command in a terminal :
 ### pip -U install nltk
 ### pip -U install gensim
 ### pip -U install scikit-learn
+
+As "Le Matin" is a daily newspaper, one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, unzip the file to use it.
