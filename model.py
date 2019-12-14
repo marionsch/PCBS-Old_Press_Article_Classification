@@ -16,9 +16,9 @@ for i in range(taille):
 		mois=str(int(mois)+1)
 	date=annee+mois+jour
 	# fichiers sources
-	copie = 'fichiers_clean/'+date+'.txt'
+	copie = 'cleaned_files/'+date+'.txt'
 	# fichier modele creer
-	res = 'fichiers_clean/modele_'+str(taille)+'textes.txt'
+	res = 'cleaned_files/modele_'+str(taille)+'textes.txt'
 	r  = open(res,"a")
 	c = open(copie, "r")
 	reader = c.readline()
