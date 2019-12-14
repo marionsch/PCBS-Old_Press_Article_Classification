@@ -1,3 +1,8 @@
+# Marion Schaeffer
+# Cogmaster 1
+# sch-marion@hotmail.com
+# Décembre 2019
+
 # Nettoie un texte 
 # Enleve les caracteres autres que chiffres, lettres minuscules, lettres majuscules, lettres accentuees et ponctuation classique
 def clean (reader):
