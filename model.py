@@ -1,3 +1,8 @@
+# Marion Schaeffer
+# Cogmaster 1
+# sch-marion@hotmail.com
+# Décembre 2019
+
 # CONSTRUCTION D'UN FICHIER TEXTE COMPOSE DE PLUSIEURS ARTICLES
 
 # premier texte du modele
