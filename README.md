@@ -19,3 +19,6 @@ In these files, there are lot of mistakes due to the digitization. So unwanted c
 The program analyzing the newspaper is "w2v.py". The data to analyze are chosen inside the file and the results are the articles classified in different clusters according to their subjects.
 
 Finally, the program "model.py" creates new files with several days to improve the classification's results.
+
+## Personal aspects of the project
+Before this project, I already program few other ones but it was the first time I used word2vec.
