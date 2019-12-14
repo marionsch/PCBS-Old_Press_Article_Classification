@@ -87,7 +87,7 @@ date=annee+mois+jour
 # journal non corrige
 file = annee + '/' + date + '/' + date + '.metadata.fulltext.json'
 # journal corrige 
-file = 'fichiers_clean/' + date + '.txt'
+file = 'cleaned_files/' + date + '.txt'
 
 f  = open(file,"r", encoding='utf-8')
 reader = f.readline()
