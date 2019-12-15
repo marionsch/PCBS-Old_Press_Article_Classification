@@ -5,7 +5,7 @@ The aim of this project is to analyse old press articles. The database is the ne
 
 At the moment, it is easy to make a research with a date but there is no tool for a research with a subject. In fact, it could be interesting to see evolution of a subject across years or to have all informations about a particular event.
 
-In this project, a part of the database will be used to try to classify articles according to their subjects. In a frist part, articles will be cleaned in order to correct mistakes added during the digitization. In a second part, the database will be analysed to know how much and which subjects we will be looking for. In a last part, word2vect will be used to classify articles according to the subjects found. 
+In this project, a part of the database will be used to try to classify articles according to their subjects. In a frist part, articles will be cleaned in order to correct mistakes added during the digitization. In a second part, the database will be analysed to know how much and which subjects we will be looking for. In a last part, word2vec will be used to classify articles according to the subjects found. 
 
 To implement this project, python3 will be used. To execute the code, nltk, gensim and sklear need to be installed with the following command in a terminal :
 ### pip -U install nltk
