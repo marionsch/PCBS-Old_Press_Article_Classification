@@ -7,6 +7,8 @@ At the moment, it is easy to make a research with a date but there is no tool fo
 
 In this project, a part of the database will be used to try to classify articles according to their subjects. In a frist part, articles will be cleaned in order to correct mistakes added during the digitization. In a second part, the database will be analysed to know how much and which subjects we will be looking for. In a last part, word2vec will be used to classify articles according to the subjects found. 
 
+Word2vec transforms words into vectors and projects them into a vector space. This projection allows words that have a common sense to be brought together by a statistical distance. This method is based on two-layer artificial neural networks trained to reconstruct the linguistic context of words. This method is carried out in two stages. The first step is to read the text and transform it in a vector. In a second step, the context of the world is taken into account, that is to say the 5 to 10 words around and then the value is added to the vector representing the word. Thus, dimensions can be identified where the vectors which have a close statistical distance are grouped, that is to say used in a same context.
+
 To implement this project, python3 will be used. To execute the code, nltk, gensim and sklear need to be installed with the following command in a terminal :
 ### pip -U install nltk
 ### pip -U install gensim
@@ -54,6 +56,10 @@ The program "model.py" creates new files with several days to improve the classi
 The program "w2v.py" analyzes the data, that is to say the articles used as input, and draws a map. This map represents the articles in differents colors. Each color corresponds to a different theme. The numbers in the colored circle enables to identify the articles. We want to have stable results, that is to say the same articles grouped together at each trial. The color is not important because it can change, the important point is that is the numbers 5, 11, 15 and 23 are grouped together, they have to be grouped together at each trial, no matter the color. 
 
 ## Results
+We made different tests before finding the optimal parameters. During the first tests, the group were most of the time different at each trial so the results were not interesting. We modified the number of iterations and the window to 10. The results were quite similar from one trial to another. In order to improve the results, we tried to increase the size of the input data. With two days, we had good results : the shape of the projection was the same at each trial and the groups were more similar.
+
+## Future prospects
+
 
 ## Personal aspects of the project
-Before this project, I already program few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them. 
+Before this project, I already program few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them even if it is not the aim of the project. 
