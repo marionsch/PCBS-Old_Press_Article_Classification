@@ -1,5 +1,5 @@
 # PCBS-Old_Press_Article_Classification
-In this project, word2vec is used to classify press articles from a newspaper according to their subjects
+In this project, word2vec is used to classify press articles from a newspaper according to their subjects.
 
 The aim of this project is to analyse old press articles. The database is the newspaper "Le Matin". This newspaper was published in Normandy since the 80s. It was recently digitized so jason files are available with the titles of articles and their contents. 
 
@@ -21,9 +21,9 @@ https://scikit-learn.org/stable/install.html
 
 As "Le Matin" is a daily newspaper (available here : https://gallica.bnf.fr/ark:/12148/cb328123058/date), one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, the folder need to be unziped to use it.
 
-In these files, there are lot of mistakes due to the digitization. So unwanted characters can be removed with the program "cleaning.py". If the user wants to directly use cleaned files, they are available in the folder "cleaned_files". 
+In these files, there are lot of mistakes due to the digitization. So the major part of unwanted characters can be removed with the program "cleaning.py". If the user wants to directly use cleaned files, they are available in the folder "cleaned_files". When we will be analysing the results at the end of the project, we will have to keep in mind that there still are mistakes in the files so it can affect the results.
 
-One of the major part of this project consists in analyzing the database in order to clean it, as it was mentionned above, and to find the themes that we will be looking for. In fact, after reading more than one hundred articles, twenty two main themes were identified : 
+One of the major part of this project consists in analyzing the database in order to clean it, as it was mentionned above, and to find the themes that we will be looking for. In fact, after reading around two hundred articles, twenty two main themes were identified : 
 - news
 - elections
 - advertisements
@@ -51,7 +51,9 @@ It means that articles will be separated into 22 clusters relative to the 22 the
 
 The program "model.py" creates new files with several days to improve the classification's results. In fact, it could be interesting to have sample bigger than only one day. 
 
+The program "w2v.py" analyzes the data, that is to say the articles used as input, and draws a map. This map represents the articles in differents colors. Each color corresponds to a different theme. The numbers in the colored circle enables to identify the articles. We want to have stable results, that is to say the same articles grouped together at each trial. The color is not important because it can change, the important point is that is the numbers 5, 11, 15 and 23 are grouped together, they have to be grouped together at each trial, no matter the color. 
+
 ## Results
 
 ## Personal aspects of the project
-Before this project, I already program few other ones but it was the first time I used word2vec.
+Before this project, I already program few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them. 
