@@ -57,9 +57,11 @@ The program "w2v.py" analyzes the data, that is to say the articles used as inpu
 
 ## Results
 We made different tests before finding the optimal parameters. During the first tests, the group were most of the time different at each trial so the results were not interesting. We modified the number of iterations and the window to 10. The results were quite similar from one trial to another. In order to improve the results, we tried to increase the size of the input data. With two days, we had good results : the shape of the projection was the same at each trial and the groups were more similar.
+![Example of results for a two days classification](https://github.com/marionsch/PCBS-Old_Press_Article_Classification/blob/master/Example_Results.png)
 
 ## Future prospects
-
+To finalize this project, it could be interesting to develop an other tool to display the results. In fact, more data improve the results but we can't visualize them clearly with the tool used here. 
+An other point is the identification of each cluster. At the moment, we separate the articles into different clusters corresponding to the themes but we did not associate a cluster with a theme. To do that, some trails seem to appear. For example, we can identify some keywords for each theme and calculate the frequency of these words in the articles inside a cluster. 
 
 ## Personal aspects of the project
 Before this project, I already program few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them even if it is not the aim of the project. 
