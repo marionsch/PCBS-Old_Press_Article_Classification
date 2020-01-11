@@ -10,9 +10,13 @@ In this project, a part of the database will be used to try to classify articles
 Word2vec transforms words into vectors and projects them into a vector space. This projection allows words that have a common sense to be brought together by a statistical distance. This method is based on two-layer artificial neural networks trained to reconstruct the linguistic context of words. This method is carried out in two stages. The first step is to read the text and transform it in a vector. In a second step, the context of the world is taken into account, that is to say the 5 to 10 words around and then the value is added to the vector representing the word. Thus, dimensions can be identified where the vectors which have a close statistical distance are grouped, that is to say used in a same context.
 
 To implement this project, python3 will be used. To execute the code, nltk, gensim and sklear need to be installed with the following command in a terminal :
-### pip -U install nltk
-### pip -U install gensim
-### pip -U install scikit-learn
+
+```
+pip -U install nltk
+pip -U install gensim
+pip -U install scikit-learn
+```
+
 If there is a problem, the documentation can be checked here :
 
 https://www.nltk.org/install.html
