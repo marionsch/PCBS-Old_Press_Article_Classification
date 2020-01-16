@@ -20,12 +20,10 @@ pip -U install scikit-learn
 If there is a problem, the documentation can be checked here :
 
 https://www.nltk.org/install.html
-
 https://pypi.org/project/gensim/
-
 https://scikit-learn.org/stable/install.html
 
-As "Le Matin" is a daily newspaper (available here : https://gallica.bnf.fr/ark:/12148/cb328123058/date), one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, the folder need to be unziped to use it.
+As "Le Matin" is a daily newspaper (available here : https://gallica.bnf.fr/ark:/12148/cb328123058/date), one year of copies are enought to complete this project. Thus, the databse can be dowloaded from the zip file 1884.zip (the first year of publication was selected). Then, the folder needs to be unziped to use it.
 
 In these files, there are lot of mistakes due to the digitization. So the major part of unwanted characters can be removed with the program "cleaning.py". If the user wants to directly use cleaned files, they are available in the folder "cleaned_files". When we will be analysing the results at the end of the project, we will have to keep in mind that there still are mistakes in the files so it can affect the results.
 
@@ -68,4 +66,4 @@ To finalize this project, it could be interesting to develop an other tool to di
 An other point is the identification of each cluster. At the moment, we separate the articles into different clusters corresponding to the themes but we did not associate a cluster with a theme. To do that, some trails seem to appear. For example, we can identify some keywords for each theme and calculate the frequency of these words in the articles inside a cluster. 
 
 ## Personal aspects of the project
-Before this project, I already program few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them even if it is not the aim of the project. 
+Before this project, I already programed few other ones but it was the first time I used word2vec. I also understood that it is really important to prepare the data used for a project. In fact, I spent lot of time reading articles to classify them and cleaning articles to use them even if it is not the aim of the project. 
